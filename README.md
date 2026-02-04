@@ -128,13 +128,13 @@ fix(header): виправлені відступи на мобілці
 2. Склонуйте репозиторій:
 
 ```bash
-git clone https://github.com/dmytro-dobrotvorskyi/project-08.git
+git clone https://github.com/akrep17m-png/JoJo-team-project
 ```
 
 3. Перейдіть у папку проекту:
 
 ```bash
-cd project-08
+cd JoJo-team-project
 ```
 
 4. Встановіть залежності:
