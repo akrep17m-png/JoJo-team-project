@@ -1,4 +1,4 @@
-# 📘 Style Guide для project-08
+# 📘 Style Guide для project
 
 ---
 
