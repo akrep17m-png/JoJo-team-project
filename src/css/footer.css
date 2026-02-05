@@ -19,6 +19,9 @@
   background-color: #41d1ff;
   transition: 200ms ease;
 } */
+.footer {
+  background: var(--color-scheme-2-background);
+}
 
 .footer .container {
   display: flex;
