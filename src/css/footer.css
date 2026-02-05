@@ -54,6 +54,7 @@
 
 .icon-list {
   display: flex;
+  align-items: baseline;
   gap: 12px;
 }
 
@@ -71,6 +72,15 @@
   color: var(--color-scheme-1-text);
   padding: 24px 0;
   transition: opacity 250ms ease-in-out;
+}
+
+.footer-item-link:hover,
+.footer-item-link:focus {
+  opacity: 0.5;
+}
+
+.footer-item-link:active {
+  opacity: 0.7;
 }
 
 .rights {
