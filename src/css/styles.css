@@ -13,10 +13,12 @@
 /* Sections style */
 @import url('./header.css');
 @import url('./hero.css');
-@import url('./about-us.css');
+@import url('./about.css');
 @import url('./benefits.css');
 @import url('./gallery.css');
 @import url('./subscribe.css');
 @import url('./testimonial.css');
 @import url('./location.css');
 @import url('./footer.css');
+@import url('./menu.css');
+@import url('./modal.css');
