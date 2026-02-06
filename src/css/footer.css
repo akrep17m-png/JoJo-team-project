@@ -122,6 +122,10 @@
 
 @media screen and (min-width: 768px) {
 
+  .footer .container {
+    padding: 24px 32px;
+  }
+
   .footer-content {
     width: 100%;
   }
@@ -150,6 +154,11 @@
 }
 
 @media screen and (min-width: 1440px) {
+
+  .footer .container {
+    padding: 24px 64px;
+  }
+
   .footer-content {
     flex-direction: row;
     justify-content: space-between;
