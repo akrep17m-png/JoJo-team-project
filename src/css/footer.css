@@ -40,7 +40,9 @@
   align-items: center;
   justify-content: flex-start;
   background: var(--color-scheme-1-foreground);
+  border: 1px solid var(--color-scheme-1-border);
   gap: 32px;
+  width: 100%;
 }
 
 .footer-logo-link {
@@ -60,6 +62,14 @@
   display: flex;
   align-items: baseline;
   gap: 12px;
+}
+
+.icon-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
 }
 
 .social-link {
@@ -121,7 +131,7 @@
     height: 36px;
   }
 
-  .icon {
+  .icon-item {
     width: 24px;
     height: 24px;
   }
