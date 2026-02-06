@@ -1,0 +1,49 @@
+.about-section .container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.welcome-title {
+    flex: 0 0 100%;
+}
+
+.welcome-description {
+    flex: 0 0 100%;
+}
+
+.welcome-img {
+    flex: 1 1 100%;
+    height: 162px;
+}
+
+.rounded-welcome {
+    border-radius: 40px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    .welcome-title {
+        flex: 0 0 calc((100% - 32px) / 2);
+    }
+
+    .welcome-description {
+        flex: 0 0 calc((100% - 32px) / 2);
+    }
+
+    .welcome-img {
+        flex: 1 1 100%;
+        height: 396px;
+    }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1440px) {
+    .about-section .container {
+        row-gap: 80px;     /* vertical spacing */
+        column-gap: 32px; /* horizontal spacing */
+    }
+
+    .welcome-img {
+        height: 738px;
+    }
+}
