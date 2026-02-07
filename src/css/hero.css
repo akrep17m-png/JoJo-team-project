@@ -62,6 +62,17 @@
     inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
     inset 0 32px 24px 0 var(--opacity-white-5);
   background: var(--color-coffee-dark);
+  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.hero-button:hover {
+  opacity: 0.5;
+}
+
+.hero-button:active,
+.hero-button:focus {
+  box-shadow: none;
+  opacity: 1;
 }
 
 @media screen and (min-width: 768px) {
