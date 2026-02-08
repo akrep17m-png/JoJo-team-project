@@ -1,0 +1,179 @@
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.25);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    inset: 0;
+    visibility: hidden;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    transition:
+        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-overlay.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.modal-overlay:not(.is-open) .modal {
+    transform: translate(-50%, -50%) scale(1.5);
+}
+
+.modal-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    background: var(--color-scheme-1-background);
+    min-width: 288px;
+    border-radius: 40px;
+    padding: 64px 16px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-close-btn {
+    width: 32px;
+    height: 32px;
+    stroke-width: 1px;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    cursor: pointer;
+    top: 24px;
+    right: 24px;
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+    opacity: 0.5;
+}
+
+.modal-close-btn:hover .cross-icon,
+.modal-close-btn:focus .cross-icon {
+    opacity: 0.5;
+}
+
+.close-icon {
+    fill: var(--color-scheme-2-text);
+}
+
+.modal-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 256px;
+    gap: 16px;
+}
+
+.modal-title {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: var(--color-scheme-1-text);
+}
+
+.modal-desc {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+    color: var(--color-scheme-1-text);
+}
+
+.Graitfull-foto {
+    border-radius: 24px;
+}
+
+.modal-button {
+    display: block;
+    align-items: center;
+    min-width: 256px;
+    height: 44px;
+    padding: 10px 24px;
+    color: var(--color-white);
+    border: none;
+    border-radius: 100px;
+    box-shadow: 0 1px 2px 0 var(--opacity-neutral-darkest-5), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px var(--opacity-neutral-darkest-15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 var(--opacity-white-5);
+    background: var(--color-coffee-dark);
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+.modal-button:hover,
+.modal-button:focus {
+    opacity: 0.5;
+}
+
+.modal-button:active {
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 768px) {
+    .modal-form {
+        gap: 48px;
+        min-width: 704px;
+        padding: 64px 30px;
+    }
+
+    .modal-text {
+        max-width: 576px;
+    }
+
+    .modal-title {
+        max-width: 502px;
+        font-size: 36px;
+    }
+
+    .Graitfull-foto {
+        width: 644px;
+        height: 374px;
+    }
+
+    .modal-button {
+        width: 340px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+
+    .modal-form {
+        padding: 64px 64px;
+    }
+
+    .modal-text {
+        max-width: 738px;
+    }
+
+    .modal-title {
+        min-width: 738px;
+        font-size: 48px;
+    }
+
+    .modal-button {
+        width: 274px;
+    }
+}
