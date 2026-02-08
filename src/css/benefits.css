@@ -40,12 +40,12 @@
 }
 
 .benefits-image {
+  font-size: 16px;
   border-radius: 32px;
   box-shadow:
     5px 5px 8px #aa9a78,
     -5px -5px 8px #e2cc9e;
   margin-bottom: 32px;
-  background-color: var();
 }
 
 .benefits-subtitle {
