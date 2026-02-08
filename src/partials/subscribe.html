@@ -1,0 +1,33 @@
+<section class="subscribe-section">
+  <div class="container subscribe-container">
+    <div class="subscribe-content">
+        <div class="subscribe-header">
+            <h2 class="subscribe-title">Join Our Coffee Community</h2>
+            <p class="subscribe-description">Experience the joy of coffee delivered right to your door. Sign up today!</p>
+        </div>
+        <form class="subscribe-form" action="/subscribe" method="post">
+            <div class="subscribe-input-control">
+                <input 
+                    class="subscribe-input" 
+                    type="email" 
+                    name="email" 
+                    placeholder="Your Email Here" 
+                    required
+                />
+                <button class="subscribe-btn" type="submit">Subscribe <svg class="subscribe-svg" width="24" height="24"><use href="./img/icons.svg#icon-next"></use></svg></button>
+            </div>
+                <small class="subscribe-note">By clicking Get Started, you agree to our Terms and Conditions.</small>
+        </form>
+    </div>
+    <picture class="subscribe-image">
+        <img
+          src="./img/join.jpg"
+          srcset="./img/join.jpg 1x, ./img/join2x.jpg 2x"
+          alt="Coffee delivery subscription"
+          class="subscribe-img"
+          loading="lazy"
+        />
+    </picture>
+
+  </div>
+</section>
