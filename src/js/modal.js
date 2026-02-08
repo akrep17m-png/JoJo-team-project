@@ -14,10 +14,10 @@
 }) */
 
 document.addEventListener("DOMContentLoaded", () => {
-    const form = document.querySelector(".modal-form");
+    const form = document.querySelector(".subscribe-form");
   const modalOverlay = document.querySelector(".modal-overlay");
-  const modalCloseIcon = document.querySelector(".modal-close-icon");
-    const modalCloseBtn = document.querySelector(".modal-close-btn");
+  const modalCloseIcon = document.querySelector(".close-icon");
+    const modalCloseBtn = document.querySelector(".modal-button");
 
     // Відкриваємо модалку після успішної валідації
     form.addEventListener("submit", (e) => {
