@@ -1,4 +1,4 @@
-(() => {
+/* (() => {
   const refs = {
     openModalBtn: document.querySelector("[data-modal-open]"),
     closeModalBtn: document.querySelector("[data-modal-close]"),
@@ -11,14 +11,12 @@
     function toggleModal() {
       refs.modal.classList.toggle("is-open");
   }
-})
+}) */
 
-/* document.addEventListener("DOMContentLoaded", () => {
-    const form = document.querySelector(".subscribe-form");
-    const modalOverlay = document.querySelector(".modal-overlay");
-    const modalCloseIcon =
-
- document.querySelector(".close-icon");
+document.addEventListener("DOMContentLoaded", () => {
+    const form = document.querySelector(".modal-form");
+  const modalOverlay = document.querySelector(".modal-overlay");
+  const modalCloseIcon = document.querySelector(".modal-close-icon");
     const modalCloseBtn = document.querySelector(".modal-close-btn");
 
     // Відкриваємо модалку після успішної валідації
@@ -50,4 +48,4 @@
         modalOverlay.classList.remove("is-open");
       }
     });
-  }); */
+  });
