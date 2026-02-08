@@ -1,5 +1,5 @@
 .hero-section {
-  background-image: linear-gradient(#00000080, #00000080), url('/img/hero.jpg');
+  background-image: linear-gradient(#00000080, #00000080), url('/img/hero.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -10,7 +10,7 @@
 
   @media screen and (min-resolution: 2x) {
     background-image:
-      linear-gradient(#00000080, #00000080), url('/img/hero2x.jpg');
+      linear-gradient(#00000080, #00000080), url('/img/hero2x.webpgi');
   }
 }
 
