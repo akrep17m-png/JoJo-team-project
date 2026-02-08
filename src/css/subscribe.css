@@ -1,0 +1,130 @@
+.subscribe-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px; 
+}
+.subscribe-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.subscribe-header {
+    margin-bottom: 32px;
+}
+.subscribe-title {
+    margin-bottom: 24px;
+}
+.subscribe-description {
+    font-weight: 400;
+}
+.subscribe-form {
+    display: flex;
+    flex-direction: column;
+}
+.subscribe-input-control {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    
+    margin-bottom: 16px;
+}
+.subscribe-input {
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+    padding: 8px 12px;
+    
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.375;
+
+    background: rgba(255, 255, 255, 0);
+    border: 1px solid var(--color-scheme-1-border);
+}
+.subscribe-input:not(:placeholder-shown):invalid {
+    border: 1px solid #7f1c1c;
+    color: #7f1c1c;
+}
+.subscribe-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    
+    border-radius: 100px;
+    border: none;
+    
+    padding: 10px 24px;
+  
+    box-shadow: 0 1px 2px 0 rgba(11, 8, 3, 0.05), inset 0 -2px 1px 0 rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(11, 8, 3, 0.15), inset 0 2px 1px 0 rgba(255, 255, 255, 0.25), inset 0 32px 24px 0 rgba(255, 255, 255, 0.05);
+    background: #6f4e37;
+    
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    transition: opacity 250ms ease-in-out;
+    
+}
+.subscribe-btn:hover,
+.subscribe-btn:focus-visible {
+    opacity: 0.5;
+}
+.subscribe-btn:active {
+    box-shadow: none;
+}
+.subscribe-svg {
+    fill: currentColor;
+    width: 24px;
+    height: 24px;
+    align-self: center;
+}
+.subscribe-note {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-scheme-1-text);
+}
+.subscribe-image {
+    width: 100%;
+    height: 400px;
+    border-radius: 40px;
+    
+    overflow: hidden;
+}
+.subscribe-img {    
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+    @media only screen and (min-width: 768px) {
+    .subscribe-input-control {
+        flex-direction: row;
+        gap: 16px;
+    }
+    .subscribe-input {
+        width: 340px;
+    }
+    .subscribe-btn {
+        width: 158px;
+    }
+}
+@media only screen and (min-width: 1440px) {
+    .subscribe-container {
+        flex-direction: row;
+        align-items: center;  
+        gap: 32px;            
+    }
+    .subscribe-content {
+        flex: 0 0 640px;
+        margin-bottom: 0;
+    }
+    .subscribe-image {
+        flex: 0 0 640px;
+        height: 400px;
+    }
+}
