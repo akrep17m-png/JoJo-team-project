@@ -20,7 +20,6 @@
 
 .welcome-images {
   flex: 1 1 100%;
-  height: 162px;
 }
 
 .rounded-welcome {
@@ -86,7 +85,6 @@
 
   .welcome-images {
     flex: 1 1 100%;
-    height: 396px;
   }
 
   .welcome-button {
