@@ -40,6 +40,7 @@
 
   background: rgba(255, 255, 255, 0);
   border: 1px solid var(--color-scheme-1-border);
+  transition: border-color 250ms ease-in-out;
 }
 .subscribe-input:not(:placeholder-shown):invalid {
   border: 1px solid #7f1c1c;
@@ -49,7 +50,7 @@
 .subscribe-input:focus,
 .subscribe-input:hover {
   outline: none;
-  border: 1px solid var(--color-scheme-1-text);
+  border-color: #6f4e37;
 }
 
 .subscribe-btn {
