@@ -61,7 +61,6 @@
   .gallery-item {
     width: 336px;
     height: 336px;
-    object-fit: cover;
   }
 
   .gallery-item:nth-child(3),
