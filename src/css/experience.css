@@ -114,4 +114,8 @@
   .gallery-image:hover {
     transform: scale(1.05);
   }
+
+  .gallery-item:last-child .gallery-image {
+    height: 416px;
+  }
 }
