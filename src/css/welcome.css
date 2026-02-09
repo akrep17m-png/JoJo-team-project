@@ -20,10 +20,6 @@
 
 .welcome-images {
   flex: 1 1 100%;
-  height: 162px;
-}
-
-.rounded-welcome {
   border-radius: 40px;
 }
 
@@ -86,7 +82,6 @@
 
   .welcome-images {
     flex: 1 1 100%;
-    height: 396px;
   }
 
   .welcome-button {
@@ -98,9 +93,5 @@
   .about-section .container {
     row-gap: 80px; /* vertical spacing */
     column-gap: 32px; /* horizontal spacing */
-  }
-
-  .welcome-images {
-    height: 738px;
   }
 }
