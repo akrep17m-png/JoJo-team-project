@@ -61,7 +61,6 @@
   .gallery-item {
     width: 336px;
     height: 336px;
-    object-fit: cover;
   }
 
   .gallery-item:nth-child(3),
@@ -74,11 +73,6 @@
   }
 
   .gallery-item:last-child {
-    width: 704px;
-    height: 391px;
-  }
-
-  .gallery-item:last-child .gallery-image {
     width: 704px;
     height: 391px;
   }

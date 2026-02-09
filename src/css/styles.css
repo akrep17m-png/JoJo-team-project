@@ -13,9 +13,9 @@
 /* Sections style */
 @import url('./header.css');
 @import url('./hero.css');
-@import url('./about.css');
-@import url('./benefits.css');
-@import url('./gallery.css');
+@import url('./welcome.css');
+@import url('./quality.css');
+@import url('./experience.css');
 @import url('./subscribe.css');
 @import url('./testimonial.css');
 @import url('./location.css');
