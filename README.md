@@ -39,7 +39,7 @@ src/
     base.css
     header.css
     footer.css
-  img/
+  images/
 ```
 
 ---
