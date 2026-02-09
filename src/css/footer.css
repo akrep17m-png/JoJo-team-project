@@ -148,9 +148,6 @@
     flex-direction: row;
   }
 
-  .footer-item-link {
-    padding: 24px 0;
-  }
 }
 
 @media screen and (min-width: 1440px) {
