@@ -77,6 +77,7 @@
     width: 704px;
     height: 391px;
   }
+
   .gallery-item:last-child .gallery-image {
     width: 704px;
     height: 391px;
@@ -118,5 +119,9 @@
 
   .gallery-image:hover {
     transform: scale(1.05);
+  }
+
+  .gallery-item:last-child .gallery-image {
+    height: 416px;
   }
 }
