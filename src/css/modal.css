@@ -57,6 +57,7 @@
     cursor: pointer;
     top: 24px;
     right: 24px;
+    transition: opacity 250ms ease-in-out;
 }
 
 .modal-close-btn:hover,
@@ -121,6 +122,7 @@
     font-weight: 500;
     line-height: 1.5;
     letter-spacing: 0.04em;
+    transition: opacity 250ms ease-in-out;
 }
 
 .modal-button:hover,
