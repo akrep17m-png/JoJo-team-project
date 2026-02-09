@@ -76,10 +76,6 @@
     width: 704px;
     height: 391px;
   }
-  .gallery-item:last-child .gallery-image {
-    width: 704px;
-    height: 391px;
-  }
 
   .gallery-image {
     width: 100%;
