@@ -121,8 +121,7 @@
 .location-map-div {
   border-radius: 40px;
   width: 100%;
-  height: 307px;
-
+  aspect-ratio: 288 / 307;
   overflow: hidden;
 }
 .location-map {
@@ -138,7 +137,7 @@
     width: 208px;
   }
   .location-map-div {
-    height: 377px;
+    aspect-ratio: 704 / 307;
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -164,6 +163,6 @@
   .location-map-div {
     flex: 1;
     width: auto;
-    height: 697px;
+    aspect-ratio: 869 / 697;
   }
 }
