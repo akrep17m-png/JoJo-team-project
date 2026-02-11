@@ -2,9 +2,9 @@
     <div class="welcome-content">
       <h1 class="welcome-title">Welcome to</h1>
       <svg class="welcome-logo" width="84" height="36" aria-label="Company Logo">
-        <use href="./images/icons.svg#icon-logo"></use>
+        <use href="/images/icons.svg#icon-logo"></use>
       </svg>
       <p class="welcome-text">Savor the Essence of Specialty Coffee</p>
     </div>
-  `,document.body.appendChild(t);const o=new Audio("./sounds/jojo-intro.mp3");o.volume=.6,o.play().catch(()=>{const n=()=>{o.play().catch(()=>{}),window.removeEventListener("click",n),window.removeEventListener("keydown",n),window.removeEventListener("touchstart",n)};window.addEventListener("click",n,{once:!0}),window.addEventListener("keydown",n,{once:!0}),window.addEventListener("touchstart",n,{once:!0})}),setTimeout(()=>{t.classList.add("hide")},4500),setTimeout(()=>{t.remove()},5e3)});
+  `,document.body.appendChild(t);const o=new Audio("/sounds/jojo-intro.mp3");o.volume=.6,o.play().catch(()=>{const n=()=>{o.play().catch(()=>{}),window.removeEventListener("click",n),window.removeEventListener("keydown",n),window.removeEventListener("touchstart",n)};window.addEventListener("click",n,{once:!0}),window.addEventListener("keydown",n,{once:!0}),window.addEventListener("touchstart",n,{once:!0})}),setTimeout(()=>{t.classList.add("hide")},4500),setTimeout(()=>{t.remove()},5e3)});
 //# sourceMappingURL=index.js.map
