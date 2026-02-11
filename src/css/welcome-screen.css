@@ -30,6 +30,10 @@
 }
 
 .welcome-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   width: min(90vw, 320px);
 }
 
@@ -99,10 +103,6 @@
 
 @media screen and (min-width: 1440px) {
   .welcome-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     width: 550px;
   }
 

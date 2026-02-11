@@ -104,5 +104,11 @@ a,
 button,
 input,
 textarea {
-  cursor: url(/images/Cursor.svg), pointer;
+  cursor: url('/images/Cursor.svg'), pointer;
+}
+
+input:hover,
+input:focus,
+input:active {
+  cursor: url('/images/Cursor.svg');
 }
