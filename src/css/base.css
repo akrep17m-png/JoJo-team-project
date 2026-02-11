@@ -99,3 +99,16 @@ main:has(.back-link) {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+a,
+button,
+input,
+textarea {
+  cursor: url('/images/Cursor.svg'), pointer;
+}
+
+input:hover,
+input:focus,
+input:active {
+  cursor: url('/images/Cursor.svg');
+}
