@@ -5,7 +5,7 @@ window.addEventListener('load', () => {
     <div class="welcome-content">
       <h1 class="welcome-title">Welcome to</h1>
       <svg class="welcome-logo" width="84" height="36" aria-label="Company Logo">
-        <use href="./images/icons.svg#icon-logo"></use>
+        <use href="/images/icons.svg#icon-logo"></use>
       </svg>
       <p class="welcome-text">Savor the Essence of Specialty Coffee</p>
     </div>
@@ -13,7 +13,7 @@ window.addEventListener('load', () => {
 
   document.body.appendChild(welcome);
 
-  const audio = new Audio('./sounds/jojo-intro.mp3');
+  const audio = new Audio('/sounds/jojo-intro.mp3');
   audio.volume = 0.6;
 
   // пробуємо програти одразу
