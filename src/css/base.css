@@ -54,6 +54,7 @@ html {
 }
 
 body {
+  padding-top: 72px;
   background-color: var(--color-coffee-lighter);
   font-family: var(--font-family);
   color: var(--color-neutral-darkest);

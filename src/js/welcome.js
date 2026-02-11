@@ -11,7 +11,7 @@ window.addEventListener('load', () => {
 
   document.body.appendChild(welcome);
 
-  const audio = new Audio('${import.meta.env.BASE_URL}jojo-intro.mp3');
+  const audio = new Audio(`${import.meta.env.BASE_URL}jojo-intro.mp3`);
   audio.volume = 0.6;
 
   // пробуємо програти одразу
