@@ -4,14 +4,14 @@ window.addEventListener('load', () => {
   welcome.innerHTML = `
     <div class="welcome-content">
       <h1 class="welcome-title">Welcome to</h1>
-      <img src="/JoJo-team-project/images/logo.png" width="542" height="232" alt="JoJo Coffee Logo" class="welcome-logo">
+      <img src="${import.meta.env.BASE_URL}/images/logo.png" width="542" height="232" alt="JoJo Coffee Logo" class="welcome-logo">
       <p class="welcome-text">Savor the Essence of Specialty Coffee</p>
     </div>
   `;
 
   document.body.appendChild(welcome);
 
-  const audio = new Audio('/JoJo-team-project/sounds/jojo-intro.mp3');
+  const audio = new Audio('${import.meta.env.BASE_URL}/sounds/jojo-intro.mp3');
   audio.volume = 0.6;
 
   // пробуємо програти одразу
