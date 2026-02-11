@@ -30,11 +30,11 @@ window.addEventListener('load', () => {
 
   setTimeout(() => {
     welcome.classList.add('hide');
-  }, 4500);
+  }, 2000);
 
   setTimeout(() => {
     welcome.remove();
-  }, 5000);
+  }, 2000);
 });
 
 /* localStorage.removeItem("jojo-visited"); - тест в DevTools */

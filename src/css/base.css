@@ -82,6 +82,7 @@ h2 {
 main {
   flex-grow: 1;
 }
+
 main:has(.back-link) {
   text-align: center;
 }
@@ -105,10 +106,4 @@ button,
 input,
 textarea {
   cursor: url('/images/Cursor.svg'), pointer;
-}
-
-input:hover,
-input:focus,
-input:active {
-  cursor: url('/images/Cursor.svg');
 }
