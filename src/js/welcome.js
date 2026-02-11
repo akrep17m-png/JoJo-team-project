@@ -4,9 +4,7 @@ window.addEventListener('load', () => {
   welcome.innerHTML = `
     <div class="welcome-content">
       <h1 class="welcome-title">Welcome to</h1>
-      <svg class="welcome-logo" width="84" height="36" aria-label="Company Logo">
-        <use href="/images/icons.svg#icon-logo"></use>
-      </svg>
+      <img src="/images/logo.png" width="542" height="232" alt="JoJo Coffee Logo" class="welcome-logo">
       <p class="welcome-text">Savor the Essence of Specialty Coffee</p>
     </div>
   `;
