@@ -1,0 +1,124 @@
+.welcome-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: var(--color-scheme-2-background);
+  color: var(--color-scheme-2-text);
+  text-align: center;
+  padding: 16px;
+
+  opacity: 1;
+  transform: scale(1);
+  filter: blur(0);
+
+  transition:
+    opacity 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+    transform 0.45s cubic-bezier(0.4, 0, 0.2, 1),
+    filter 0.45s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.welcome-screen.hide {
+  opacity: 0;
+  transform: scale(1.05);
+  filter: blur(6px);
+  pointer-events: none;
+}
+
+.welcome-content {
+  width: min(90vw, 320px);
+}
+
+.welcome-title {
+  font-family: var(--font-family);
+  line-height: 1.5;
+  font-weight: 600;
+  font-size: clamp(24px, 6vw, 32px);
+  margin-bottom: 24px;
+}
+
+.welcome-logo {
+  width: min(80vw, 220px);
+  margin-bottom: 24px;
+}
+
+.welcome-text {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: clamp(14px, 4vw, 16px);
+
+  /* line-height: 35px; */
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+@media screen and (min-width: 375px) {
+  .welcome-content {
+    width: 320px;
+  }
+
+  .welcome-title {
+    font-size: 32px;
+    margin-bottom: 32px;
+  }
+
+  .welcome-logo {
+    width: 260px;
+    height: 111px;
+  }
+
+  .welcome-text {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .welcome-content {
+    width: 420px;
+  }
+
+  .welcome-title {
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+
+  .welcome-logo {
+    width: 360px;
+    height: 154px;
+  }
+
+  .welcome-text {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .welcome-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 550px;
+  }
+
+  .welcome-title {
+    font-size: 48px;
+    margin-bottom: 48px;
+  }
+
+  .welcome-logo {
+    display: block;
+    align-self: center;
+    width: 541px;
+    height: 232px;
+  }
+
+  .welcome-text {
+    font-size: 23px;
+  }
+}
