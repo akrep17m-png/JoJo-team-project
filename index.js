@@ -4,5 +4,5 @@
       <img src="/JoJo-team-project/logo.png" width="542" height="232" alt="JoJo Coffee Logo" class="welcome-logo">
       <p class="welcome-text">Savor the Essence of Specialty Coffee</p>
     </div>
-  `,document.body.appendChild(t);const o=new Audio("${import.meta.env.BASE_URL}jojo-intro.mp3");o.volume=.6,o.play().catch(()=>{const n=()=>{o.play().catch(()=>{}),window.removeEventListener("click",n),window.removeEventListener("keydown",n),window.removeEventListener("touchstart",n)};window.addEventListener("click",n,{once:!0}),window.addEventListener("keydown",n,{once:!0}),window.addEventListener("touchstart",n,{once:!0})}),setTimeout(()=>{t.classList.add("hide")},4500),setTimeout(()=>{t.remove()},5e3)});
+  `,document.body.appendChild(t);const o=new Audio("/JoJo-team-project/jojo-intro.mp3");o.volume=.6,o.play().catch(()=>{const n=()=>{o.play().catch(()=>{}),window.removeEventListener("click",n),window.removeEventListener("keydown",n),window.removeEventListener("touchstart",n)};window.addEventListener("click",n,{once:!0}),window.addEventListener("keydown",n,{once:!0}),window.addEventListener("touchstart",n,{once:!0})}),setTimeout(()=>{t.classList.add("hide")},4500),setTimeout(()=>{t.remove()},5e3)});
 //# sourceMappingURL=index.js.map
