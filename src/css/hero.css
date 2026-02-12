@@ -1,18 +1,19 @@
 .hero-section {
-  background-image: linear-gradient(#00000080, #00000080), url('/images/hero.webp');
+  background-image:
+    linear-gradient(#00000080, #00000080), url('/images/hero.webp');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
   padding: 108.5px 32px;
   margin: 0 auto;
-  
 }
-  @media screen and (min-resolution: 2dppx)  {
-    .hero-section {
-      background-image: linear-gradient(#00000080, #00000080), url('/images/hero2x.webp');
-    }
+@media screen and (min-resolution: 2dppx) {
+  .hero-section {
+    background-image:
+      linear-gradient(#00000080, #00000080), url('/images/hero2x.webp');
   }
+}
 .hero-content {
   display: flex;
   flex-direction: column;

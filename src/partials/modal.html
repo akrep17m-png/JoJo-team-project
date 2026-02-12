@@ -11,15 +11,36 @@
         Fresh brews, special offers, and cozy updates are coming your way.
       </p>
     </div>
-    <img
-      srcset="/images/Generate.webp 1x, /images/Generate2x.webp 2x"
-      src="/images/Generate.jpg"
-      alt="Graitfull"
-      width="256"
-      height="200"
-      class="Graitfull-foto"
-      loading="lazy"
-    />
+    <picture>
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          /images/modal/modal-desc-min.jpg    1x,
+          /images/modal/modal-desc@2x-min.jpg 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          /images/modal/modal-tab-min.jpg    1x,
+          /images/modal/modal-tab@2x-min.jpg 2x
+        "
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          /images/modal/modal-mob-min.jpg    1x,
+          /images/modal/modal-mob@2x-min.jpg 2x
+        "
+      />
+      <img
+        class="graitfull-foto"
+        src="/images/modal/modal-desc-min.jpg"
+        alt="cup of coffee envelope and croissant"
+        width="644"
+        height="374"
+      />
+    </picture>
     <button type="submit" class="modal-button">Close</button>
   </div>
 </div>

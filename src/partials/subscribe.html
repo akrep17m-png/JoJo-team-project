@@ -32,11 +32,33 @@
       </form>
     </div>
     <picture class="subscribe-image">
+      <source
+        media="(min-width: 1440px)"
+        srcset="
+          /images/subscribe/subscribe-desc-min.webp    1x,
+          /images/subscribe/subscribe-desc@2x-min.webp 2x
+        "
+      />
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          /images/subscribe/subscribe-tab-min.webp    1x,
+          /images/subscribe/subscribe-tab@2x-min.webp 2x
+        "
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          /images/subscribe/subscribe-mob-min.webp    1x,
+          /images/subscribe/subscribe-mob@2x-min.webp 2x
+        "
+      />
       <img
-        src="./images/join.jpg"
-        srcset="./images/join.webp 1x, ./images/join2x.webp 2x"
-        alt="Coffee delivery subscription"
         class="subscribe-images"
+        src="/images/subscribe/subscribe-desc-min.webp"
+        alt="people in the office at the computer"
+        width="704"
+        height="400"
         loading="lazy"
         decoding="async"
       />
