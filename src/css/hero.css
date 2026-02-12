@@ -3,26 +3,31 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-width: 320px;
-  max-width: 375px;
+  width: 100%;
   padding: 108.5px 32px;
   margin: 0 auto;
-
-  @media screen and (min-resolution: 2x) {
-    background-image:
-      linear-gradient(#00000080, #00000080), url('/images/hero2x.webp');
-  }
+  
 }
-
+  @media screen and (min-resolution: 2dppx)  {
+    .hero-section {
+      background-image: linear-gradient(#00000080, #00000080), url('/images/hero2x.webp');
+    }
+  }
 .hero-content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
+  align-items: center;
+  gap: 32px;
+  padding: 0;
+  min-width: 256px;
   max-width: 256px;
-  margin: 0 auto;
+  margin: 0;
 }
-
+.hero-txt {
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+}
 .hero-title {
   font-family: var(--second-family);
   text-transform: uppercase;
@@ -31,19 +36,15 @@
   line-height: 1.2;
   letter-spacing: -0.01em;
   color: var(--color-white);
-  margin-bottom: 24px;
 }
-
 .hero-text {
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
   color: var(--color-white);
-
-  margin-bottom: 32px;
 }
-
 .hero-link-button {
+  display: block;
   border: none;
   font-weight: 500;
   font-size: 16px;
@@ -60,33 +61,32 @@
     inset 0 2px 1px 0 rgba(255, 255, 255, 0.25),
     inset 0 32px 24px 0 var(--opacity-white-5);
   background: var(--color-coffee-dark);
-  transition: all 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  align-self: flex-start;
 }
-
 .hero-link-button:hover {
   opacity: 0.5;
 }
-
 .hero-link-button:active,
 .hero-link-button:focus {
   box-shadow: none;
   opacity: 1;
 }
-
 @media screen and (min-width: 768px) {
   .hero-section {
-    max-width: 1440px;
-    padding: 311.5px 176px 311.5px 32px;
+    padding-top: 311.5px;
+    padding-bottom: 311.5px;
   }
-
   .hero-content {
     max-width: 560px;
-    margin: 0 auto;
   }
 }
-
 @media screen and (min-width: 1440px) {
   .hero-section {
-    padding: 259px 818px 259px 64px;
+    width: 1440px;
+    padding: 259px 64px;
+  }
+  .hero-title {
+    font-size: 56px;
   }
 }
