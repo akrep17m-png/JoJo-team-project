@@ -2,10 +2,10 @@ window.addEventListener('load', () => {
   const welcome = document.createElement('div');
   welcome.className = 'welcome-screen';
   welcome.innerHTML = `
-    <div class="welcome-content">
-      <h1 class="welcome-title">Welcome to</h1>
+    <div class="welcome-screen-content">
+      <h1 class="welcome-screen-title">Welcome to</h1>
       <img src="${import.meta.env.BASE_URL}logo.png" width="542" height="232" alt="JoJo Coffee Logo" class="welcome-logo">
-      <p class="welcome-text">Savor the Essence of Specialty Coffee</p>
+      <p class="welcome-screen-text">Savor the Essence of Specialty Coffee</p>
     </div>
   `;
 
