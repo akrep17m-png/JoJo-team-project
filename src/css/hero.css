@@ -5,6 +5,8 @@
   background-repeat: no-repeat;
   width: 100%;
   padding: 108.5px 32px;
+  margin: 0 auto;
+  
 }
   @media screen and (min-resolution: 2dppx)  {
     .hero-section {
@@ -81,6 +83,7 @@
 }
 @media screen and (min-width: 1440px) {
   .hero-section {
+    width: 1440px;
     padding: 259px 64px;
   }
   .hero-title {
