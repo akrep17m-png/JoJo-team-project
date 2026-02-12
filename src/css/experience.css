@@ -1,7 +1,6 @@
 .gallery-section .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .text-container {
@@ -23,26 +22,30 @@
   max-width: 288px;
 }
 
-.gallery-image {
+.gallery-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.gallery-item {
+  overflow: hidden;
   border-radius: 32px;
   box-shadow:
     5px 5px 8px #aa9a78,
     -5px -5px 8px #e2cc9e;
+  transition: transform 250ms ease-in-out;
 }
 
-.gallery-item:last-child .gallery-image {
+.gallery-item img {
+  width: 100%;
   object-fit: cover;
-  min-height: 391px;
 }
 
-.gallery-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  justify-content: center;
-}
-
-@media screen and (min-width: 320px) and (max-width: 375px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .gallery-item {
     min-width: 288px;
     max-width: 343px;
@@ -51,71 +54,26 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .section-title {
-    max-width: 100%;
-  }
-
+  .section-title,
   .section-description {
-    max-width: 100%;
-  }
-  .gallery-item {
-    max-width: 336px;
-    max-height: 336px;
+    max-width: 768px;
   }
 
-  .gallery-item:nth-child(3),
-  .gallery-item:nth-child(4) {
-    max-height: 189px;
-  }
-
-  section .gallery-list {
+  .gallery-list {
+    flex-direction: row;
+    flex-wrap: wrap;
     gap: 32px;
-  }
-
-  .gallery-item:last-child {
-    max-width: 704px;
-    max-height: 391px;
-  }
-
-  .gallery-image {
-    width: 100%;
-    height: 100%;
   }
 }
 
 @media only screen and (min-width: 1440px) {
   .gallery-list {
     flex-direction: column;
-    flex-wrap: wrap;
     justify-content: flex-start;
-
     max-height: 948px;
   }
 
-  .gallery-item {
-    max-width: 416px;
-    max-height: 416px;
-  }
-
-  .gallery-item:nth-child(3),
-  .gallery-item:nth-child(4) {
-    max-height: 234px;
-  }
-
-  .gallery-item:last-child {
-    max-width: 416px;
-    max-height: 416px;
-  }
-
-  .gallery-image {
-    transition: transform 250ms ease-in-out;
-  }
-
-  .gallery-image:hover {
+  .gallery-item:hover {
     transform: scale(1.05);
-  }
-
-  .gallery-item:last-child .gallery-image {
-    max-height: 416px;
   }
 }
