@@ -19,14 +19,38 @@
       </a>
     </div>
     <div class="welcome-images">
-      <img
-        srcset="/images/welcome.webp 1x, /images/welcome2x.webp 2x"
-        src="/images/welcome.jpg"
-        class="rounded-welcome"
-        decoding="async"
-        alt="man brewing coffee"
-        fetchpriority="high"
-      />
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            /images/welcome/coffe-desktop-1-min.webp    1x,
+            /images/welcome/coffe-desktop-1@2x-min.webp 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /images/welcome/coffe-tablet-1-min.webp    1x,
+            /images/welcome/coffe-tablet-1@2x-min.webp 2x
+          "
+        />
+        <source
+          media="(max-width: 767px)"
+          srcset="
+            /images/welcome/coffe-mobile-1.webp    1x,
+            /images/welcome/coffe-mobile-1@2x.webp 2x
+          "
+        />
+        <img
+          src="/images/welcome/coffe-desktop-1-min.webp 1x"
+          srcset="/images/welcome/coffe-desktop-1@2x-min.webp 2x"
+          class="welcome-rounded"
+          alt="Coffe Maker"
+          width="1312"
+          height="738"
+          loading="lazy"
+        />
+      </picture>
     </div>
   </div>
 </section>
