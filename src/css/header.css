@@ -6,12 +6,34 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   max-width: 1440px;
   margin: 0 auto;
+
+  transition: transform 250ms ease, background-color 250ms ease, box-shadow 250ms ease;
+  will-change: transform;
 }
 
 .header .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+
+  height: 72px;
+  transition: height 250ms ease;
+}
+
+.header.is-scrolled .container {
+  height: 56px;
+}
+.header.is-scrolled {
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+.header.is-hidden {
+  transform: translateY(-100%);
+}
+.header a:focus-visible,
+.header button:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
 }
 
 .header-logo-link {
